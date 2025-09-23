@@ -1,0 +1,37 @@
+/* 
+ * Custom CSS for Bootstrap 5 One-Pager
+ * This file will be overwritten when SCSS is compiled
+ * To customize styles, edit the SCSS files in the scss directory
+ */
+
+/* Custom styles from main.scss */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Add some padding to sections for better spacing */
+section {
+  padding: 4rem 0;
+}
+
+/* Custom styles for the navbar */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom styles for cards */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer should stay at the bottom */
+footer {
+  margin-top: auto;
+}

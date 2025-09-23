@@ -1,0 +1,81 @@
+// Import custom variables
+@import "variables";
+
+// Custom styles below this line
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+// Add some padding to sections for better spacing
+section {
+  padding: 4rem 0;
+}
+
+// Custom styles for the navbar
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 40px 60px;
+  border-radius: 25px;
+  width: calc(100% - 120px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+// Custom styles for cards
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+// Footer should stay at the bottom
+footer {
+  margin-top: auto;
+}
+
+// Carousel styles
+.carousel-container {
+  width: 100%;
+  height: 100vh;
+  margin-top: 0;
+  padding-top: 96px; // Height of the navbar (56px) + top margin (40px)
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+#heroCarousel {
+  height: 100%;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; // This maintains the image proportions while covering the container
+}
+
+// Adjust the navbar to be transparent over the carousel
+.navbar {
+  background-color: rgba(13, 110, 253, 0.8) !important; // Semi-transparent primary color
+  z-index: 1030;
+  // Enhanced floating effect with more pronounced shadow
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+// Adjust spacing for the first section after the carousel
+#about {
+  margin-top: 0;
+}

@@ -1,0 +1,25 @@
+// Custom color variables
+$primary: #0d6efd;    // Default Bootstrap blue, can be changed
+$secondary: #6c757d;  // Default Bootstrap gray
+$success: #198754;    // Default Bootstrap green
+$info: #0dcaf0;       // Default Bootstrap cyan
+$warning: #ffc107;    // Default Bootstrap yellow
+$danger: #dc3545;     // Default Bootstrap red
+$light: #f8f9fa;      // Default Bootstrap light
+$dark: #212529;       // Default Bootstrap dark
+
+// You can add more custom variables here
+$body-bg: #ffffff;
+$body-color: #212529;
+
+// Custom theme colors
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark
+);
