@@ -16,9 +16,9 @@ section {
 // Custom styles for the navbar
 .navbar {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 40px 60px;
+  margin: 10px;
   border-radius: 25px;
-  width: calc(100% - 120px);
+  width: calc(100% - 20px);
   border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -42,7 +42,7 @@ footer {
   width: 100%;
   height: 100vh;
   margin-top: 0;
-  padding-top: 96px; // Height of the navbar (56px) + top margin (40px)
+  padding-top: 66px; // Height of the navbar (56px) + top margin (10px)
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 0;
@@ -69,7 +69,7 @@ footer {
 
 // Adjust the navbar to be transparent over the carousel
 .navbar {
-  background-color: rgba(13, 110, 253, 0.8) !important; // Semi-transparent primary color
+  background-color: rgba(140, 255, 0, 0.8) !important; // Semi-transparent primary color
   z-index: 1030;
   // Enhanced floating effect with more pronounced shadow
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
