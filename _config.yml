@@ -1,0 +1,47 @@
+# Site Einstellungen
+title: "Evonolo Air"
+description: "Moderne Website mit Jekyll und Bootstrap 5"
+baseurl: "" # für GitHub Pages: "/repository-name"
+url: "" # für GitHub Pages: "https://username.github.io"
+lang: de
+
+# Build Einstellungen
+markdown: kramdown
+theme: null
+permalink: pretty
+
+# Collections für modulare Sections
+collections:
+  sections:
+    output: false
+    sort_by: order
+
+# Defaults für Frontmatter
+defaults:
+  - scope:
+      path: ""
+      type: "sections"
+    values:
+      layout: "section"
+
+# Plugins (nur GitHub Pages kompatible)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Ausgeschlossene Dateien
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .DS_Store
+  - README.md
+
+# Bootstrap & Assets
+sass:
+  style: compressed
+  sass_dir: _sass
+

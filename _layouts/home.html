@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<!-- Hero Section (falls definiert) -->
+{% if page.hero %}
+<section class="hero bg-primary text-white py-5">
+  <div class="container">
+    <div class="row align-items-center min-vh-50">
+      <div class="col-lg-8 mx-auto text-center">
+        <h1 class="display-3 fw-bold mb-4">{{ page.hero.title }}</h1>
+        {% if page.hero.subtitle %}
+        <p class="lead mb-4">{{ page.hero.subtitle }}</p>
+        {% endif %}
+        {% if page.hero.cta_text and page.hero.cta_link %}
+        <a href="{{ page.hero.cta_link }}" class="btn btn-light btn-lg">{{ page.hero.cta_text }}</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- Sections -->
+{% assign sorted_sections = site.sections | sort: 'order' %}
+{% for section in sorted_sections %}
+  {% if section.enabled != false %}
+    {% capture section_type %}sections/{{ section.type }}.html{% endcapture %}
+    {% include {{ section_type }} section=section %}
+  {% endif %}
+{% endfor %}
+
+<!-- Alternative: Sections aus Frontmatter -->
+{% if page.sections %}
+  {% for section in page.sections %}
+    {% if section.enabled != false %}
+      {% capture section_type %}sections/{{ section.type }}.html{% endcapture %}
+      {% include {{ section_type }} section=section %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+<!-- Page Content (falls vorhanden) -->
+{% if content != '' %}
+<div class="container my-5">
+  {{ content }}
+</div>
+{% endif %}
+
