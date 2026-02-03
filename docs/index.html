@@ -117,7 +117,7 @@
                         <div class="col d-flex align-items-md-center">
                             <div class="ps-lg-5">
                                 <h5 class="text-uppercase fw-bold heading">Vermessung &amp; 3D</h5>
-                                <p class="text-muted mb-4">Mit moderner Drohnentechnologie bieten wir <strong>professionelle Vermessung und 3D-Modelle</strong> für Bau, Landwirtschaft, Umwelt, Industrie und Gemeinden. Durch hochauflösende Luftbilder, RTK-GPS und präzise Auswertung entstehen <strong>exakte, georeferenzierte Datengrundlagen</strong> – schnell, sicher und kosteneffizient.</p><a class="btn btn-light shadow" role="button" href="vermessung-und-3d.html">Erfahren Sie mehr</a>
+                                <p class="text-muted mb-4">Mit moderner Drohnentechnologie bieten wir <strong>professionelle Vermessung und 3D-Modelle</strong> für Bau, Landwirtschaft, Umwelt, Industrie und Gemeinden. Durch hochauflösende Luftbilder, RTK-GPS und präzise Auswertung entstehen <strong>exakte, georeferenzierte Datengrundlagen</strong> – schnell, sicher und kosteneffizient.</p><a class="btn btn-light shadow" role="button" href="vermessung-und-3d.html">Erfahre mehr</a>
                             </div>
                         </div>
                     </div>
@@ -126,7 +126,7 @@
                         <div class="col d-flex align-items-md-center">
                             <div class="pe-lg-4">
                                 <h5 class="text-uppercase fw-bold heading">Thermografie &amp; Inspektionen</h5>
-                                <p class="text-muted mb-4">Mit <strong>Thermografie- und Spezial-Inspektionen per Drohne</strong> erkennen wir Wärmeverluste, technische Mängel und potenzielle Schäden frühzeitig – <strong>berührungslos, sicher und im laufenden Betrieb</strong>. Mithilfe hochauflösender Wärmebildkameras und präziser Auswertung lokalisieren wir Auffälligkeiten, die mit bloßem Auge nicht sichtbar sind.</p><a class="btn btn-light shadow" role="button" href="inspektionen.html">Erfahren Sie mehr</a>
+                                <p class="text-muted mb-4">Mit <strong>Thermografie- und Spezial-Inspektionen per Drohne</strong> erkennen wir Wärmeverluste, technische Mängel und potenzielle Schäden frühzeitig – <strong>berührungslos, sicher und im laufenden Betrieb</strong>. Mithilfe hochauflösender Wärmebildkameras und präziser Auswertung lokalisieren wir Auffälligkeiten, die mit bloßem Auge nicht sichtbar sind.</p><a class="btn btn-light shadow" role="button" href="inspektionen.html">Erfahre mehr</a>
                             </div>
                         </div>
                     </div>
@@ -350,7 +350,7 @@
     <footer class="bg-body-secondary bg-opacity-25 bg-gradient mt-5 py-5">
         <div class="container d-flex flex-column justify-content-between align-items-center flex-lg-row">
             <div class="text-center text-lg-start mb-5 mb-lg-0"><a class="fs-4 fw-bold link-light" href="/"><img class="img-fluid me-2" src="assets/img/evonolo-air-logo-transparent.png" width="270" height="30"></a>
-                <p class="mt-1 mb-4"><span style="background-color: rgb(21, 22, 23);">Zuverlässig - Sicher - Professionell</span></p><a class="btn btn-secondary border-0" role="button" href="/contacts.html">Kontaktieren Sie uns</a>
+                <p class="mt-1 mb-4"><span style="background-color: rgb(21, 22, 23);">Zuverlässig - Sicher - Professionell</span></p><a class="btn btn-secondary border-0" role="button" href="/contacts.html">Melde dich bei uns</a>
             </div>
             <div class="text-center text-lg-end">
                 <div class="mb-lg-2"><a class="link-light me-2" href="https://www.instagram.com/evonolo_air/" data-bs-target="https://www.instagram.com/evonolo_air/  "><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor" class="fs-5">
@@ -404,7 +404,150 @@ window.addEventListener('cc:onConsent', ({detail}) => {
     
 });
 
+</script><!-- Promo Modal Snippet (Bootstrap 5, Animate.css) -->
+<!-- Einbinden in Bootstrap Studio als "Custom Code via File" -->
+<div class="modal fade" id="promoModal" tabindex="-1" aria-labelledby="promoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg">
+      <div class="modal-header border-0">
+        <h5 class="modal-title visually-hidden" id="promoModalLabel">Limitierte Aktion</h5>
+        <button type="button" class="btn-close btn-close-primary" data-bs-dismiss="modal" aria-label="Schließen"></button>
+      </div>
+      <div class="modal-body pt-0">
+        <div class="px-3 pb-3 text-center">
+          <span class="badge rounded-pill text-bg-success mb-2">Frühjahrsaktion</span>
+          <h3 class="fw-bold mb-2">-20 % auf PV-Inspektion</h3>
+          <p class="text-body-secondary mb-4">Sichere dir jetzt unser Angebot. Läuft ab in:</p>
+
+          <!-- Countdown -->
+          <div id="promoCountdown" class="d-flex justify-content-center gap-2 mb-4" aria-live="polite">
+            <div class="timer-seg">
+              <div class="timer-val text-dark" id="pc-hours">24</div>
+              <div class="timer-label">Std</div>
+            </div>
+            <div class="timer-sep">:</div>
+            <div class="timer-seg">
+              <div class="timer-val text-dark" id="pc-min">00</div>
+              <div class="timer-label">Min</div>
+            </div>
+            <div class="timer-sep">:</div>
+            <div class="timer-seg">
+              <div class="timer-val text-dark" id="pc-sec">00</div>
+              <div class="timer-label">Sek</div>
+            </div>
+          </div>
+
+          <a class="btn btn-success btn-lg w-100" href="/contacts.html">Jetzt anfragen</a>
+<!--           <small class="d-block text-muted mt-2">Gültig 24 Stunden ab deinem ersten Besuch.</small> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Countdown-Styling (Bootstrap-nah, minimal eigenes CSS) */
+  #promoModal .timer-seg { min-width: 84px; }
+  #promoModal .timer-val {
+    font-size: 2.25rem;
+    line-height: 1;
+    padding: .5rem .75rem;
+    border-radius: .5rem;
+    background: var(--bs-light);
+    color: var(--bs-emphasis-color);
+    font-weight: 700;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.5);
+  }
+  #promoModal .timer-label { font-size: .75rem; color: var(--bs-secondary-color); margin-top: .25rem; }
+  #promoModal .timer-sep { font-size: 2rem; line-height: 1; padding: .25rem .25rem 0; color: var(--bs-secondary-color); }
+    
+  #promoModal  .btn-close-primary {
+  --bs-btn-close-color: var(--bs-primary); }
+</style>
+
+<script>
+  (function () {
+    var STORAGE_KEY = 'promoFirstVisitTs';
+    var DURATION_MS = 24 * 60 * 60 * 1000; // 24h
+
+    function safeNow() { return Date.now ? Date.now() : new Date().getTime(); }
+
+    function getOrInitFirstVisit() {
+      try {
+        var raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) {
+          var parsed = parseInt(raw, 10);
+          if (!isNaN(parsed)) return parsed;
+        }
+        var ts = safeNow();
+        localStorage.setItem(STORAGE_KEY, String(ts));
+        return ts;
+      } catch (e) {
+        // Fallback ohne Storage
+        if (!window.__promoFirstVisitTs) window.__promoFirstVisitTs = safeNow();
+        return window.__promoFirstVisitTs;
+      }
+    }
+
+    function pad(n) { return n < 10 ? '0' + n : '' + n; }
+
+    function updateCountdown(endTs) {
+      var hEl = document.getElementById('pc-hours');
+      var mEl = document.getElementById('pc-min');
+      var sEl = document.getElementById('pc-sec');
+      if (!hEl || !mEl || !sEl) return function(){};
+
+      function render() {
+        var now = safeNow();
+        var diff = Math.max(0, endTs - now);
+        var totalSec = Math.floor(diff / 1000);
+        var hours = Math.floor(totalSec / 3600);
+        var minutes = Math.floor((totalSec % 3600) / 60);
+        var seconds = totalSec % 60;
+        hEl.textContent = pad(hours);
+        mEl.textContent = pad(minutes);
+        sEl.textContent = pad(seconds);
+      }
+
+      render();
+      var iv = setInterval(function () {
+        render();
+        if (safeNow() >= endTs) {
+          clearInterval(iv);
+        }
+      }, 1000);
+
+      return function () { clearInterval(iv); };
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var modalEl = document.getElementById('promoModal');
+      if (!modalEl || typeof bootstrap === 'undefined' || !bootstrap.Modal) return;
+
+      // Animate.css beim Öffnen hinzufügen
+      modalEl.addEventListener('show.bs.modal', function () {
+        var dlg = modalEl.querySelector('.modal-dialog');
+        if (dlg) dlg.classList.add('animate__animated', 'animate__fadeInDown');
+      });
+      // Beim Schließen wieder entfernen
+      modalEl.addEventListener('hidden.bs.modal', function () {
+        var dlg = modalEl.querySelector('.modal-dialog');
+        if (dlg) dlg.classList.remove('animate__animated', 'animate__fadeInDown');
+      });
+
+      // Countdown vorbereiten
+      var firstVisit = getOrInitFirstVisit();
+      var endTs = firstVisit + DURATION_MS;
+      updateCountdown(endTs);
+
+      var promo = new bootstrap.Modal(modalEl, { backdrop: true, keyboard: true });
+
+      // 5 Sekunden verzögert anzeigen
+      setTimeout(function () { promo.show(); }, 2500);
+    });
+  })();
 </script>
+
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/cookieconsent.umd.js"></script>

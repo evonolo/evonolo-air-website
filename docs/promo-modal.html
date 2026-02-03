@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>evonolo Air - Drohnendienstleistungen</title>
+    <link rel="canonical" href="https://evonolo-air.com/promo-modal.html">
+    <meta property="og:url" content="https://evonolo-air.com/promo-modal.html">
+    <meta name="description" content="evonolo AIR ist dein Drohnenservice in Tirol &amp; Österreich für PV-Inspektionen, Thermografie, Bauwerks- &amp; Industrieinspektionen, Vermessung sowie professionelle Luftaufnahmen. Schnell, sicher &amp; präzise.">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Inter.css">
+    <link rel="stylesheet" href="assets/css/Outfit.css">
+    <link rel="stylesheet" href="assets/css/bss-overrides.css">
+    <link rel="stylesheet" href="assets/css/cookieconsent.css">
+    <link rel="stylesheet" href="assets/css/template.css">
+</head>
+
+<body>
+    <div class="modal fade" role="dialog" tabindex="-1" id="promoModal" aria-labelledby="promoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="visually-hidden modal-title" id="promoModalLabel">Promo</h5><button class="btn-close" aria-label="Schließen" data-bs-dismiss="modal" type="button"></button>
+                </div>
+                <div class="modal-body"></div>
+            </div>
+        </div>
+    </div><style>
+  /* Platzhalter-Höhe für zukünftigen Inhalt */
+  #promoModal .modal-body {
+    min-height: 120px;
+  }
+</style><script>
+  (function () {
+    document.addEventListener('DOMContentLoaded', function () {
+      var modalEl = document.getElementById('promoModal');
+      if (!modalEl || typeof bootstrap === 'undefined' || !bootstrap.Modal) return;
+
+      // Animate.css bei Show hinzufügen
+      modalEl.addEventListener('show.bs.modal', function () {
+        var dlg = modalEl.querySelector('.modal-dialog');
+        if (dlg) dlg.classList.add('animate__animated', 'animate__zoomIn');
+      });
+      // Nach Close entfernen
+      modalEl.addEventListener('hidden.bs.modal', function () {
+        var dlg = modalEl.querySelector('.modal-dialog');
+        if (dlg) dlg.classList.remove('animate__animated', 'animate__zoomIn');
+      });
+
+      var promo = new bootstrap.Modal(modalEl, {
+        backdrop: true,
+        keyboard: true
+      });
+
+      setTimeout(function () { promo.show(); }, 5000);
+    });
+  })();
+</script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/cookieconsent.umd.js"></script>
+    <script src="assets/js/cookieconsent-config.js"></script>
+</body>
+
+</html>
