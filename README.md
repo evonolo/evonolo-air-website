@@ -22,6 +22,9 @@ docs/                     wird von GitHub Pages ausgeliefert
   impressum.html          Impressum
   datenschutz.html        Datenschutzerklärung
   llms.txt                Kurzfassung der Website für Sprachmodelle
+  favicon.ico             Browser-Icon (16/32/48 px), dazu favicon-96/192/512.png
+  apple-touch-icon.png    Icon für den iOS-Homescreen (180 px)
+  site.webmanifest        Name, Farben und Icons für Android
   robots.txt, sitemap.xml
   CNAME                   evonolo-air.com
   assets/
@@ -90,6 +93,9 @@ sowie in Navigation und Footer aller Seiten.
 
 - Jede Seite hat eigenen Titel, eigene Beschreibung und Open-Graph-Angaben.
 - Die Startseite trägt `LocalBusiness`-Strukturdaten, die FAQ-Seite `FAQPage`.
+- Das Browser-Icon zeigt das „a“ aus der Wortmarke in Neongrün auf Navy. Die Dateien
+  entstehen aus dem Logo, das Skript dazu liegt nicht im Repo; bei einem Logowechsel
+  müssen sie neu erzeugt werden.
 - `llms.txt` fasst Leistungen, Preise und Kontakt für Sprachmodelle zusammen und wird
   bei inhaltlichen Änderungen mitgepflegt.
 
