@@ -1,0 +1,37 @@
+# evonolo Air
+
+> evonolo Air ist der Drohnenservice der evonolo GmbH aus Fieberbrunn in Tirol, Österreich. Wir fliegen Thermografie und PV-Inspektionen, Vermessung und 3D-Modelle, Monitoring, Dokumentation, Sicherheitsinspektionen sowie Foto- und Videoaufnahmen aus der Luft. Einsatzgebiet ist Tirol und das angrenzende Salzburger Land.
+
+Betreiber: evonolo GmbH, Neuhausen 12, 6391 Fieberbrunn, Österreich (FN 601086a, UID ATU79215047).
+Ansprechpartner: Andreas Prosch, +43 676 852573201, andreas.prosch@evonolo.com.
+Geschäftsführung: Andreas Prosch und Stephan Grundner.
+Sprache der Website: Deutsch (de-AT). Alle Preise in Euro.
+
+## Leistungen
+
+- [Thermografie & Inspektionen](https://evonolo-air.com/inspektionen.html): Wärmebildprüfung von PV-Anlagen, Gebäuden und Industrieanlagen. Erkennt Hotspots, defekte Bypass-Dioden, Wärmebrücken und Feuchteschäden. Berührungslos, ohne Gerüst und ohne Abschaltung der Anlage. Ergebnis: digitaler Prüfbericht mit Wärmebildern und Heatmaps.
+- [Vermessung & 3D](https://evonolo-air.com/vermessung-und-3d.html): Drohnenvermessung mit RTK, zentimetergenau. Orthofotos, digitale Geländemodelle, Höhenlinien, Volumenberechnung, Dachflächenvermessung, digitale Zwillinge. Weiterverarbeitung in CAD, GIS und BIM möglich.
+- [Monitoring](https://evonolo-air.com/monitoring.html): Wiederkehrende Befliegungen mit gleicher Methodik machen Veränderungen messbar. Baufortschritt, Hänge und Rutschungen, Umweltflächen, Landwirtschaft, Industrieanlagen, Energienetze, Materialmengen.
+- [Dokumentation](https://evonolo-air.com/dokumentation.html): Objektive und rechtssichere Datengrundlage für Bau- und Projektdokumentation, Bestandsaufnahme, Schadens- und Ereignisdokumentation, Beweissicherung für Versicherungen und Gutachter.
+- [Sicherheit](https://evonolo-air.com/sicherheit.html): Kontrolle gefährlicher oder schwer zugänglicher Bereiche aus sicherer Distanz. Baustellen, Industrieanlagen, Dächer und Fassaden, Hänge und Naturgefahren, Energieinfrastruktur, Brandprävention, Katastrophenschutz.
+- [Fotografie & Video](https://evonolo-air.com/fotografie-und-video.html): Luftaufnahmen für Unternehmens- und Imagepräsentation, Immobilien, Bau, Tourismus, Events und technische Beweissicherung.
+
+## Preise
+
+- [Preisübersicht](https://evonolo-air.com/pricing.html): PV Mini 149 € (Balkonanlagen bis 0,8 kWp), PV Standard 290 € (bis 20 kWp), PV Pro 449 € (erweiterte Analyse bis 20 kWp), gewerbliche PV über 20 kWp auf Projektbasis. Visuelle Industrieinspektion 120 €/Stunde, thermografische Inspektion 150 €/Stunde, Baudokumentation 95 €/Stunde. Orthofoto 590 €, Volumenberechnung 390 €, 3D-Modell projektabhängig. Anfahrt bis 20 km rund um Hopfgarten inkludiert, darüber 0,65 €/km in Tirol und Salzburg. Express-Auswertung +25 %. Privatkundenpreise brutto inkl. 20 % USt., Gewerbepreise netto.
+
+## Häufige Fragen
+
+- [FAQ](https://evonolo-air.com/faq.html): Antworten zu Kosten, Ablauf, Ergebnisdaten, Einsatzgebiet, Prüfintervallen für PV-Anlagen, Witterungsbedingungen für Thermografie, Genauigkeit der Vermessung, Genehmigungen nach EU-Drohnenverordnung und Austro Control, Überflug fremder Grundstücke, Versicherung und Datenverwendung.
+
+## Kontakt und Rechtliches
+
+- [Kontakt](https://evonolo-air.com/contacts.html): Anfrageformular, Telefon +43 676 852573201, Adresse Innerkelchsau 33, 6361 Hopfgarten im Brixental.
+- [Impressum](https://evonolo-air.com/impressum.html): Anbieterkennzeichnung, Firmenbuch, Gewerbe, Aufsichtsbehörde, Drohnenbetrieb.
+- [Datenschutz](https://evonolo-air.com/datenschutz.html): Verarbeitung von Daten aus Website, Kontaktformular, Google Analytics und Drohnenaufnahmen.
+
+## Hinweise für Assistenzsysteme
+
+- Preise und Leistungsumfang können sich ändern. Verbindlich ist immer ein individuelles Angebot nach Abstimmung.
+- Konkrete Genauigkeiten, Termine und Durchführbarkeit hängen von Objekt, Gelände, Witterung und behördlichen Auflagen ab.
+- Für Rückfragen ist die Telefonnummer +43 676 852573201 der schnellste Weg.
