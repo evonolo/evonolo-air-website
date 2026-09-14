@@ -460,7 +460,11 @@ body.fl-theme .container {
 
   /* Karten und Abschnitte etwas kompakter */
   body.fl-theme .card.fl-card .card-body { padding: 1.5rem !important; }
+  /* Einheitlicher Rhythmus zwischen den Abschnitten. Der Bootstrap-Build
+     rechnet mit 1,5rem je Stufe, py-5/pb-5 wären sonst 72px. */
   body.fl-theme section.py-5 { padding-top: 2.25rem !important; padding-bottom: 2.25rem !important; }
+  body.fl-theme section.pb-5 { padding-bottom: 2.25rem !important; }
+  body.fl-theme section.py-4 { padding-top: 2.25rem !important; padding-bottom: 2.25rem !important; }
   body.fl-theme .display-1, body.fl-theme .display-2, body.fl-theme .display-3,
   body.fl-theme .display-4, body.fl-theme .display-5 { font-size: calc(1.6rem + 1.8vw); }
 }
