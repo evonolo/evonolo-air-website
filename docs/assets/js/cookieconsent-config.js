@@ -1,6 +1,11 @@
 /**
- * All config. options available here:
- * https://cookieconsent.orestbida.com/reference/configuration-reference.html
+ * Cookie-Banner von evonolo-air.com (CookieConsent 3.1).
+ * Optionen: https://cookieconsent.orestbida.com/reference/configuration-reference.html
+ *
+ * Google Analytics lädt assets/js/analytics.js, und zwar nur nach Zustimmung
+ * zur Kategorie „analytics“. Texte überarbeitet am 09.10.2026: vorher standen
+ * im Einstellungsfenster englische Platzhalter der Vorlage und die falsche
+ * Aussage, alle Daten seien anonymisiert.
  */
 CookieConsent.run({
 
@@ -13,25 +18,24 @@ CookieConsent.run({
         },
         preferencesModal: {
             layout: 'box',
-            // position: 'left right',
             flipButtons: false,
             equalWeightButtons: true
         }
     },
-    
+
     categories: {
         necessary: {
-            enabled: true,  // this category is enabled by default
-            readOnly: true  // this category cannot be disabled
+            enabled: true,
+            readOnly: true
         },
         analytics: {
-          autoClear: {
-            cookies: [
-              { name: /^_ga/ },   // _ga, _ga_xxxxx
-              { name: '_gid' },
-              { name: '_gat' }
-            ]
-          },
+            autoClear: {
+                cookies: [
+                    { name: /^_ga/ },
+                    { name: '_gid' },
+                    { name: '_gat' }
+                ]
+            }
         }
     },
 
@@ -40,38 +44,36 @@ CookieConsent.run({
         translations: {
             de: {
                 consentModal: {
-                    title: 'Wir nutzen Cookies',
-                    description: 'Diese Website nutzt notwendige Cookies für den Betrieb. Mit deiner Zustimmung verwenden wir zusätzlich Statistik-Cookies (Google Analytics 4), um unsere Inhalte zu optimieren.',
-                    acceptAllBtn: 'Alle akzeptieren',
-                    acceptNecessaryBtn: 'Alle ablehnen',
-                    showPreferencesBtn: 'Individuell anpassen'
+                    title: 'Dürfen wir messen?',
+                    description: 'Wir möchten verstehen, wie diese Website genutzt wird, und setzen dafür Google Analytics ein – aber nur mit deiner Zustimmung. Lehnst du ab, wird nichts an Google übertragen, und die Website funktioniert genauso. Mehr dazu in der <a href="/datenschutz.html">Datenschutzerklärung</a>.',
+                    acceptAllBtn: 'Erlauben',
+                    acceptNecessaryBtn: 'Ablehnen',
+                    showPreferencesBtn: 'Einstellungen'
                 },
                 preferencesModal: {
-                    title: 'Manage cookie preferences',
-                    acceptAllBtn: 'Accept all',
-                    acceptNecessaryBtn: 'Reject all',
-                    savePreferencesBtn: 'Accept current selection',
-                    closeIconLabel: 'Close modal',
+                    title: 'Cookie-Einstellungen',
+                    acceptAllBtn: 'Alle erlauben',
+                    acceptNecessaryBtn: 'Alle ablehnen',
+                    savePreferencesBtn: 'Auswahl speichern',
+                    closeIconLabel: 'Schließen',
                     sections: [
                         {
-                            title: 'Somebody said ... cookies?',
-                            description: 'I want one!'
+                            title: 'Deine Auswahl',
+                            description: 'Hier legst du fest, welche Cookies wir verwenden dürfen. Du kannst deine Entscheidung jederzeit über den Link „Cookies“ am Seitenende ändern.'
                         },
                         {
-                            title: 'Strictly Necessary cookies',
-                            description: 'These cookies are essential for the proper functioning of the website and cannot be disabled.',
-
-                            //this field will generate a toggle linked to the 'necessary' category
+                            title: 'Notwendig',
+                            description: 'Speichert deine Auswahl in diesem Fenster. Ohne diesen Eintrag müssten wir dich bei jedem Besuch erneut fragen. Er lässt sich nicht abschalten.',
                             linkedCategory: 'necessary'
                         },
                         {
-                            title: 'Performance and Analytics',
-                            description: 'These cookies collect information about how you use our website. All of the data is anonymized and cannot be used to identify you.',
+                            title: 'Statistik (Google Analytics)',
+                            description: 'Zeigt uns, welche Seiten aufgerufen werden, woher Besucher kommen und ob jemand anruft, eine E-Mail schreibt oder das Kontaktformular abschickt. Dabei wird deine IP-Adresse an Google übertragen und Cookies werden gesetzt. Einzelheiten in der Datenschutzerklärung.',
                             linkedCategory: 'analytics'
                         },
                         {
-                            title: 'More information',
-                            description: 'For any queries in relation to my policy on cookies and your choices, please <a href="#contact-page">contact us</a>'
+                            title: 'Fragen?',
+                            description: 'Schreib uns an <a href="mailto:office@evonolo.com">office@evonolo.com</a>.'
                         }
                     ]
                 }

@@ -313,41 +313,9 @@
             </div>
         </div>
     </footer>
-<script type="module" src="/assets/js/cookieconsent-config.js"></script>
-
-<script>
-
-  function loadGA4() {
-    if (window.__ga4_loaded) return;
-    window.__ga4_loaded = true;
-
-    // GA4 Script nachladen
-    const script = document.createElement('script');
-    script.async = true;
-    script.src = "https://www.googletagmanager.com/gtag/js?id=G-NJ0X3KDVX9";
-    document.head.appendChild(script);
-
-    // GA4 Config
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    window.gtag = gtag;
-
-    gtag('js', new Date());
-    gtag('config', 'G-NJ0X3KDVX9');
-  }
-
-window.addEventListener('cc:onConsent', ({detail}) => {
-    
-  const acceptedAnalytics = detail.cookie.categories.includes('analytics');
-
-  if (acceptedAnalytics) {
-    loadGA4();
-  } else { }
-    
-});
-
-</script>    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/analytics.js"></script>
     <script src="assets/js/cookieconsent.umd.js"></script>
     <script src="assets/js/cookieconsent-config.js"></script>
 </body>
