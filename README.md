@@ -33,6 +33,9 @@ docs/                     wird von GitHub Pages ausgeliefert
     js/                    Bootstrap, Cookie-Consent
     img/web/               Für das Web verkleinerte Bilder
     img/…                  Originalbilder nach Leistung sortiert
+brand/                    Markenwerkzeug, nicht Teil der Website
+  make_logo.py            erzeugt Favicons und Logos aus der Geometrie der Bildmarke
+  google/                 Logo für das Google-Unternehmensprofil (720 und 1024 px)
 texts/                    Ausgangstexte der Leistungsseiten (RTF)
 images/                   Rohmaterial, nicht Teil der Website
 evonolo-air-website.bsdesign  Bootstrap-Studio-Projekt (siehe Warnung unten)
@@ -78,6 +81,31 @@ sips -s format jpeg -s formatOptions 66 -Z 1600 original.jpg --out docs/assets/i
 
 Jedes `<img>` braucht ein `alt`-Attribut, das beschreibt, was zu sehen ist.
 
+## Logo und Favicons
+
+Zwei Marken sind im Spiel: die **Wortmarke** „evonolo air“ unter
+`docs/assets/img/evonolo-air-logo*.png` und die **Bildmarke** von evonolo – vier
+Quadrate auf Navy, das untere rechte in Neongrün. Die Bildmarke gibt es nicht als
+Vektordatei; `brand/make_logo.py` baut sie stattdessen aus ihren Proportionen nach
+und rendert sie in jeder Größe.
+
+```bash
+cd brand
+python3 make_logo.py pruefen    # Rekonstruktion gegen die eingecheckten Dateien halten
+python3 make_logo.py favicons   # docs/favicon*, apple-touch-icon.png, favicon.ico
+python3 make_logo.py google     # brand/google/evonolo-air-google-logo-*.png
+```
+
+`pruefen` vergleicht Pixel für Pixel mit den Originalen; Abweichungen unter 8 von 255
+sind Antialiasing. Wer die Marke ändert, läuft danach `favicons` und zieht
+`docs/site.webmanifest` nach.
+
+Für das **Google-Unternehmensprofil** sitzt die Marke enger als im Favicon (60 statt
+73 Prozent der Kantenlänge). Google beschneidet das Logo an manchen Stellen rund, und
+bei der Favicon-Dichte würden die Ecken der Marke knapp angeschnitten. Hochgeladen
+wird `brand/google/evonolo-air-google-logo-720.png`; die 1024er Fassung liegt als
+Reserve daneben. Google verlangt quadratisch, mindestens 250 px und höchstens 5 MB.
+
 ## Veröffentlichen
 
 Ein Push auf `main` löst den Deploy aus. Nach ein bis zwei Minuten ist die Änderung live.
@@ -93,9 +121,8 @@ sowie in Navigation und Footer aller Seiten.
 
 - Jede Seite hat eigenen Titel, eigene Beschreibung und Open-Graph-Angaben.
 - Die Startseite trägt `LocalBusiness`-Strukturdaten, die FAQ-Seite `FAQPage`.
-- Das Browser-Icon zeigt das „a“ aus der Wortmarke in Neongrün auf Navy. Die Dateien
-  entstehen aus dem Logo, das Skript dazu liegt nicht im Repo; bei einem Logowechsel
-  müssen sie neu erzeugt werden.
+- Das Browser-Icon zeigt die Bildmarke von evonolo: vier Quadrate auf Navy, das untere
+  rechte in Neongrün. Erzeugt wird es von `brand/make_logo.py` (siehe „Logo und Favicons“).
 - `llms.txt` fasst Leistungen, Preise und Kontakt für Sprachmodelle zusammen und wird
   bei inhaltlichen Änderungen mitgepflegt.
 
