@@ -28,9 +28,10 @@ docs/                     wird von GitHub Pages ausgeliefert
   robots.txt, sitemap.xml
   CNAME                   evonolo-air.com
   assets/
-    css/frisch-luftig.css  Eigenes Design, aktiv über <body class="fl-theme">
-    css/…                  Bootstrap-Studio-Export, Schriften, Cookie-Consent
-    js/                    Bootstrap, Cookie-Consent
+    css/air.css            Das gesamte Design, ohne Framework
+    css/Inter.css, Outfit.css, cookieconsent.css   Schriften und Cookie-Banner
+    js/air.js              Bewegung und Bedienung (Menü, Reiter, Regler, Einblenden)
+    js/…                   Cookie-Banner, Analytics, Kontaktformular
     img/web/               Für das Web verkleinerte Bilder
     img/…                  Originalbilder nach Leistung sortiert
 brand/                    Markenwerkzeug, nicht Teil der Website
@@ -54,21 +55,38 @@ python3 -m http.server 8765
 Die Seiten sind einzelne HTML-Dateien ohne Template-System. Navigation und Footer stehen
 in jeder Datei. Wer eines davon ändert, muss die Änderung auf allen Seiten nachziehen.
 
-Das Design lebt in `docs/assets/css/frisch-luftig.css`. Die Datei setzt Bootstrap-Variablen
-für den hellen Auftritt und definiert eigene Klassen:
+Das Design lebt in `docs/assets/css/air.css`, die Bewegung in `docs/assets/js/air.js`.
+Beides kommt ohne Framework und ohne Bibliotheken aus. Eingebunden werden auf jeder Seite
+nur `Inter.css`, `Outfit.css`, `cookieconsent.css` und `air.css`. Wer `air.css` oder `air.js`
+ändert, zählt das `?v=` in den zwölf Seiten hoch, damit Browser die neue Fassung laden.
 
 | Klasse | Zweck |
 | --- | --- |
-| `fl-theme` | Auf `<body>`, schaltet das gesamte Design ein |
-| `fl-top` | Kopfbereich mit Himmelsverlauf |
-| `fl-nav`, `fl-nav-pill` | Schwebende Navigationsleiste |
-| `fl-hero`, `fl-badge`, `fl-hero-stat` | Startseiten-Kopf |
-| `fl-bento`, `fl-tile`, `fl-tile-img` | Leistungskacheln |
-| `fl-stats`, `fl-stat` | Kennzahlen |
-| `fl-cta` | Dunkler Kontakt-Block |
-| `fl-faq` | Aufklappbare Fragen (`<details>`, ohne JavaScript) |
-| `fl-legal` | Impressum und Datenschutz |
-| `fl-card` | Bootstrap-Karte im hellen Look |
+| `nav`, `nav-links`, `nav-burger` | Schwebende Navigationsleiste, auf dem Handy mit Menüknopf |
+| `hero`, `hero-sub`, `kenburns` | Seitenkopf mit Bild und langsamer Kamerafahrt (Startseite, Leistungsseiten) |
+| `page-head` | Seitenkopf ohne Bild (Preise, FAQ, Kontakt, Impressum, Datenschutz) |
+| `section`, `wrap`, `wrap narrow` | Abschnitt und Inhaltsbreite (1200 px, schmal 880 px) |
+| `reveal` | Blendet ein Element beim Scrollen ein, `style="--d:1"` verzögert |
+| `tabs`, `tab`, `panel` | Reiter „Wofür brauchst du uns?“ auf der Startseite |
+| `tile`, `grid-3`, `grid-4` | Leistungskacheln und Raster |
+| `compare` | Vergleichsregler Wärmebild und Foto |
+| `flow`, `steps`, `step` | Ablauf mit Flugbahn, die sich beim Scrollen zeichnet |
+| `price-card`, `rows`, `note` | Preiskarten, Zusatzleistungen, Hinweis zur Umsatzsteuer |
+| `kurz`, `topics`, `topic`, `gallery` | Leistungsseiten: Kurzfassung, Themenkarten, Bilder |
+| `on-dark`, `checks`, `checks-grid` | Dunkler Abschnitt und Häkchenlisten |
+| `faq`, `faq-group`, `faq-body` | Aufklappbare Fragen (`<details>`) |
+| `contact`, `field`, `dark-card` | Kontaktformular und Karte „Direkt erreichen“ |
+| `prose`, `updated` | Impressum und Datenschutz |
+| `cta`, `foot`, `mobile-cta` | Kontakt-Block, Fuß, feste Anfrageleiste auf dem Handy |
+
+Ohne JavaScript und mit der Systemeinstellung „Bewegung reduzieren“ bleiben alle Seiten
+vollständig lesbar. Ein Hero-Video lässt sich nachrüsten: `<video muted loop playsinline
+preload="none" data-src="assets/video/hero.mp4" aria-hidden="true"></video>` in
+`.hero-media` hinter das Bild setzen, `air.js` blendet es ein, sobald es abspielbar ist.
+
+Nicht mehr eingebunden, aber noch im Ordner: Bootstrap (`assets/bootstrap/`),
+`frisch-luftig.css`, `bss-overrides.css`, `animate.min.css`, `aos.*`, `swiper.*`,
+`styles.min.css`, `script.min.js`, `bs-init.js`.
 
 ## Bilder
 
@@ -129,5 +147,5 @@ sowie in Navigation und Footer aller Seiten.
 ## Achtung: Bootstrap Studio
 
 Im Repository liegt `evonolo-air-website.bsdesign`. Die Seiten in `docs/` wurden seit
-September 2026 direkt im HTML und CSS bearbeitet und sind **nicht** mit dem Bootstrap-Studio-Projekt
-synchron. Ein erneuter Export aus Bootstrap Studio würde diese Änderungen überschreiben.
+September 2026 direkt im HTML und CSS bearbeitet und im November 2026 ohne Bootstrap neu aufgebaut.
+Sie sind **nicht** mit dem Bootstrap-Studio-Projekt synchron. Ein erneuter Export aus Bootstrap Studio würde diese Änderungen überschreiben.
