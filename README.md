@@ -84,10 +84,6 @@ vollständig lesbar. Ein Hero-Video lässt sich nachrüsten: `<video muted loop 
 preload="none" data-src="assets/video/hero.mp4" aria-hidden="true"></video>` in
 `.hero-media` hinter das Bild setzen, `air.js` blendet es ein, sobald es abspielbar ist.
 
-Nicht mehr eingebunden, aber noch im Ordner: Bootstrap (`assets/bootstrap/`),
-`frisch-luftig.css`, `bss-overrides.css`, `animate.min.css`, `aos.*`, `swiper.*`,
-`styles.min.css`, `script.min.js`, `bs-init.js`.
-
 ## Bilder
 
 Große Originale liegen unter `docs/assets/img/<leistung>/`. Für die Website gehören
@@ -148,4 +144,5 @@ sowie in Navigation und Footer aller Seiten.
 
 Im Repository liegt `evonolo-air-website.bsdesign`. Die Seiten in `docs/` wurden seit
 September 2026 direkt im HTML und CSS bearbeitet und im November 2026 ohne Bootstrap neu aufgebaut.
+Bootstrap, Font Awesome, Swiper und AOS liegen seither nicht mehr im Ordner.
 Sie sind **nicht** mit dem Bootstrap-Studio-Projekt synchron. Ein erneuter Export aus Bootstrap Studio würde diese Änderungen überschreiben.
