@@ -515,3 +515,11 @@ section[id], details[id] { scroll-margin-top: 110px; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .js .reveal, .js h1 .w > span, .js .pilot-photo img { opacity: 1; transform: none; }
 }
+
+/* ---------- Auffindbarkeit: Leistungslinks in der Fußzeile, Textlinks in Karten, Ortszeile in der Hauptüberschrift ---------- */
+.foot .foot-services { justify-content: flex-start; gap: 8px 24px; padding-bottom: 26px; margin-bottom: 30px; border-bottom: 1px solid var(--line); font-weight: 500; }
+.foot .foot-services a { color: var(--navy); }
+.topic .link-arrow { align-self: flex-start; margin-top: 4px; }
+.checks + .link-arrow { margin-top: 20px; }
+.hero h1.with-badge { margin-top: 0; }
+.hero h1 .badge { display: flex; width: fit-content; margin-bottom: 22px; letter-spacing: 0; text-wrap: wrap; }

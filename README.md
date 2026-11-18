@@ -12,6 +12,8 @@ docs/                     wird von GitHub Pages ausgeliefert
   index.html              Startseite
   inspektionen.html       Thermografie & Inspektionen
   vermessung-und-3d.html  Vermessung & 3D-Modelle
+  volumenberechnung-drohne.html  Zielseite für die Suche „Volumenberechnung Drohne“
+  dachinspektion-drohne.html     Zielseite für die Suche „Dachinspektion Drohne“
   monitoring.html         Monitoring
   dokumentation.html      Dokumentation
   sicherheit.html         Sicherheit
@@ -21,6 +23,7 @@ docs/                     wird von GitHub Pages ausgeliefert
   contacts.html           Kontakt
   impressum.html          Impressum
   datenschutz.html        Datenschutzerklärung
+  404.html                Fehlerseite (noindex, Pfade zu den Assets beginnen mit /)
   llms.txt                Kurzfassung der Website für Sprachmodelle
   favicon.ico             Browser-Icon (16/32/48 px), dazu favicon-96/192/512.png
   apple-touch-icon.png    Icon für den iOS-Homescreen (180 px)
@@ -58,7 +61,7 @@ in jeder Datei. Wer eines davon ändert, muss die Änderung auf allen Seiten nac
 Das Design lebt in `docs/assets/css/air.css`, die Bewegung in `docs/assets/js/air.js`.
 Beides kommt ohne Framework und ohne Bibliotheken aus. Eingebunden werden auf jeder Seite
 nur `Inter.css`, `Outfit.css`, `cookieconsent.css` und `air.css`. Wer `air.css` oder `air.js`
-ändert, zählt das `?v=` in den zwölf Seiten hoch, damit Browser die neue Fassung laden.
+ändert, zählt das `?v=` in allen Seiten hoch, damit Browser die neue Fassung laden.
 
 | Klasse | Zweck |
 | --- | --- |
@@ -128,7 +131,8 @@ Ein Push auf `main` löst den Deploy aus. Nach ein bis zwei Minuten ist die Änd
 git add docs && git commit -m "…" && git push
 ```
 
-Wenn eine neue Seite dazukommt, gehört sie in `docs/sitemap.xml`, in `docs/llms.txt`
+Wenn eine neue Seite dazukommt, gehört sie in `docs/sitemap.xml`, in `docs/llms.txt`,
+in die Leistungslinks der Fußzeile (`foot-services`, steht in jeder Datei)
 sowie in Navigation und Footer aller Seiten.
 
 ## Suchmaschinen und KI
